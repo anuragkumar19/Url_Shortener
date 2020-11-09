@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Url Shortener - Short Url</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav class="deep-purple darken-4">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo left">Url Shortener</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h4>Short Your Long Url</h4>
+        <div class="card">
+            <div class="card-content">
+                <form id="form">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">link</i>
+                            <input id="urlInp" type="url" class="validate" required>
+                            <label for="urlInp">Long Url</label>
+                        </div>
+
+                        <div class="right-align">
+                            <button type="submit" class="btn waves-effect deep-purple darken-4">Shorten</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="card hide" id="hiddenCard">
+            <div class="card-content">
+                <h5>Short Url :-</h5>
+
+                <div class="row">
+                    <div class="col s12">
+                        <input type="url" id="shortUrl" style="border: 1px solid #000; padding-left: 10px;color: #000;" value="13">
+                        <div class="center-align">
+                            <button id="copyBtn" class="btn green darken-4 waves-effect" style="margin: 10px auto;"><i class="material-icons left">content_copy</i>Copy</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="/materialize.min.js"></script>
+    <script src="/axios.min.js" integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ==" crossorigin="anonymous"></script>
+    <script src="/main.js"></script>
+</body>
+
+</html>
